@@ -84,6 +84,8 @@ public class MyGdxSimulation extends ApplicationAdapter {
 	public void update(float delta) {
 		world.step(1/60f, 6, 2);
 
+		player.setGravityScale(2);
+
 		inputUpdate(delta);
 		cameraUpdate(delta);
 	}
